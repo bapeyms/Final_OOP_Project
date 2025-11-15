@@ -1,9 +1,11 @@
 #pragma once
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Base
 {
+public:
 	static string location_of_base;
 	static string defense_of_base;
 
@@ -20,7 +22,14 @@ public:
 	{
 		return defense_of_base;
 	}
-	void PrintDescription();
+	static void PrintDescription()
+	{
+		cout << "- AMERICAN MILITARY BASE DESCRIPTION -" << endl;
+		cout << "Location: " << GetLocationOfBase() << endl;
+		cout << "Defense: " << GetDefenseOfBase() << endl;
+		cout << endl;
+	}
+	void static ShowStatus();
 
 	static int GetPeopleOnBase()
 	{
