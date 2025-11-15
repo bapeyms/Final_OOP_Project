@@ -13,11 +13,11 @@ public:
     Bus(int people_count, int max_people_count, double petrol_amount, double tank_vol)
         : Vehicle(petrol_amount, tank_vol), people(people_count), max_people(max_people_count) {}
 
-    int getPeopleCount() const 
+    int GetPeopleCount() const 
     { 
         return people; 
     }
-    int getMaxPeople() const 
+    int GetMaxPeople() const 
     { 
         return max_people; 
     }

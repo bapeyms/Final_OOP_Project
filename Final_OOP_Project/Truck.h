@@ -14,11 +14,11 @@ public:
     Truck(double current_load, double max_load_value, double petrol_amount, double tank_vol)
         : Vehicle(petrol_amount, tank_vol), load(current_load), max_load(max_load_value) {}
 
-    double getCurrentLoad() const 
+    double GetCurrentLoad() const 
     { 
         return load; 
     }
-    double getMaxLoad() const 
+    double GetMaxLoad() const 
     { 
         return max_load; 
     }

@@ -13,11 +13,11 @@ public:
     Vehicle(double petrol_amount, double tank_volume): petrol(petrol_amount), tank_volume(tank_volume) {}
     virtual ~Vehicle() {}
 
-    double getTankVolume() const 
+    double GetTankVolume() const 
     { 
         return tank_volume; 
     }
-    double getPetrolAmount() const 
+    double GetPetrolAmount() const 
     { 
         return petrol; 
     }
